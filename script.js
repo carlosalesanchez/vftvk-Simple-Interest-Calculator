@@ -15,7 +15,7 @@ function compute()
        //Calcular el anio
         var year = new Date().getFullYear()+parseInt(years);
         //Mostrar el mensaje
-        document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+        document.getElementById("result").innerHTML="If you deposit <span class='marcador'>"+principal+"</span><br\>at an interest rate of <span class='marcador'>"+rate+"%</span><br/>You will receive an amount of <span class='marcador'>"+amount+"</span>,<br>in the year <span class='marcador'>"+year+"</span><br/>"
     }
     else{
         //Avisarmos que el ingreso no es valido
@@ -28,4 +28,4 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval+" %";
-}   
+}
